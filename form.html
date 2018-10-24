@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="form_styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+     <form>
+        <fieldset>
+            <legend>Personal</legend>
+            <div class="form_text">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Alina Ray" required>
+            </div>
+            <div class="form_text">
+                <label for="bday">Date of Birth</label>
+                <input type="date" id="bday" name="bday" required>
+            </div>
+            <div class="form_radio">
+                <input type="radio" id="male" name="sex">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="sex" checked>
+                <label for="female">Female</label>
+            
+            </div>
+            <div class="checkbox_container">
+                <label for="a">What is your favorite pet? <sup> (you can choose more than one)</sup></label>
+                    <div class="checkbox">
+                        <input type="checkbox" id="a">
+                        <label for="a">Cat</label>
+                        <input type="checkbox" id="b">
+                        <label for="b">Dog</label>
+                        <input type="checkbox" id="c">
+                        <label for="c">Parrot</label>
+                        <input type="checkbox" id="d">
+                        <label for="d">Rabbit</label>
+                        <input type="checkbox" id="e">
+                        <label for="e">Fish</label>
+                    </div>
+            </div>
+       </fieldset>   
+        <fieldset>
+             <legend>Account</legend>  
+             <div class="form_text">
+                 <label for="email">Email</label>
+                 <input type="email" id="email" name="email" placeholder="a.alina.ray@gmail.com" required>
+             </div>
+             <div class="form_text">
+                 <label for="pwd">Password</label>
+                 <input type="password" id="pwd" name="pwd" required>
+             </div>
+             <div class="form_text">
+                 <label for="pwd">Verify Password</label>
+                 <input type="password" id="pwd" name="pwd" required>
+             </div>
+          </fieldset> 
+        <fieldset>
+            <legend>Contact</legend>
+            <div class="form_text">
+                <label for="address">Address<sup> (optional)</sup></label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div class="form_text">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                      <option>Ukraine</option>
+                      <option>Poland</option>
+                      <option>Russia</option>
+                </select>
+            </div>
+            <div class="form_text">
+                <label for="tel">Phone</label>
+                <input type="tel" id="tel" name="tel" placeholder="+380633434330" required>
+            </div>
+        </fieldset>
+            <div class="submit">
+                <input type="submit" value="Sign up">
+             </div>
+     </form>
+    </body>
+</html>

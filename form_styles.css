@@ -1,0 +1,136 @@
+body{
+    background-image: url(background1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Lato', sans-serif;
+    
+}
+form {
+  box-sizing: border-box;
+  margin: 0 auto; /*center*/
+  width: 440px;
+  padding: 20px;
+  border: 1px solid rgba(217, 170, 136, 0.69);
+  border-radius: 30px;
+  background-color: rgba(211, 145, 97, 0.51);
+    
+}
+fieldset{
+    background-color: rgba(255, 255, 255, 0.36);
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    border-radius: 30px;
+    
+}
+legend{
+    padding: 5px;
+    text-align: center;
+    color: rgb(6, 57, 56);
+    font-size: 18px;
+    border: 1px solid rgba(250, 250, 250, 0.77);
+    border-radius: 10px;
+    background-color: rgba(250, 250, 250, 0.76);
+}
+.form_text{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    
+}
+label{
+    padding:5px;
+    font-size: 16px;
+    color: rgb(6, 57, 56);
+    transition:all 0.5s;
+    
+}
+input{
+    padding-left: 7px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    height:20px;
+    font-size: 12px;
+    transition:all 0.5s;
+    background-color: rgba(255, 255, 255, 0.70);
+    
+}
+input[type]:hover{
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
+    
+}
+select{
+    height:23px;
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.70);
+    
+}
+select:hover{
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.form_radio,
+.checkbox_container{
+    padding:5px;
+}
+
+.checkbox{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.checkbox label{
+    border-radius: 10px; 
+    border: 1px solid rgba(255, 255, 255, 0.80);
+    color: rgb(6, 57, 56);
+    width:50px;
+    text-align: center;
+    background-color: rgba(250, 250, 250, 0.60);
+    
+}
+.checkbox label:hover{
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.80);
+    transform: scale(1.1 , 1.1);
+    
+}
+
+input[type=checkbox] {
+  position: absolute;
+  left: -9999px;
+    
+}
+input[type=checkbox]:checked + label {
+  border: solid 1px #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+  
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    padding-top:15px;
+    
+}
+input[type=submit]{
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    color: rgb(6, 57, 56);
+    border-color: rgba(255, 255, 255, 0.80);
+    background-color: rgba(250, 250, 250, 0.70);
+    transition:all 0.5s;
+    
+}
+input[type=submit]:hover{
+    background-color: rgba(255, 255, 255, 0.80);
+    transform: scale(1.15 , 1.15);
+    
+}
+input[type=text]:optional {
+    opacity: 0.7;  //Полупрозрачность 
+   }
+sup{
+    opacity: 0.5;
+    font-size: 11px;
+}
