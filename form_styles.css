@@ -87,10 +87,10 @@ select:hover{
     width:50px;
     text-align: center;
     background-color: rgba(250, 250, 250, 0.60);
-    
+    transition: all 0.5s;
 }
 .checkbox label:hover{
-    border-color: white;
+    border-color: darkorange;
     background-color: rgba(255, 255, 255, 0.80);
     transform: scale(1.1 , 1.1);
     
@@ -102,7 +102,7 @@ input[type=checkbox] {
     
 }
 input[type=checkbox]:checked + label {
-  border: solid 1px #fff;
+  border: solid 1px darkorange;
   background-color: rgba(255, 255, 255, 0.85);
   
 }
@@ -123,12 +123,13 @@ input[type=submit]{
     
 }
 input[type=submit]:hover{
+    border-color:darkorange;
     background-color: rgba(255, 255, 255, 0.80);
     transform: scale(1.15 , 1.15);
     
 }
 input[type=text]:optional {
-    opacity: 0.7;  //Полупрозрачность 
+    opacity: 0.7;  
    }
 sup{
     opacity: 0.5;
